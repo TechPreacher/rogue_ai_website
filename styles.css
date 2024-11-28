@@ -49,8 +49,63 @@ h1.crt-text {
 
 h2.crt-text {
     font-size: 2rem;
+    margin-bottom: 2rem;
     text-shadow: 0 0 3px #FFB000;
     animation: textShadow 1.6s infinite;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 0 2rem;
+    max-height: calc(100vh - 250px);
+    overflow-y: auto;
+}
+
+table.crt-text {
+    border-collapse: separate;
+    border-spacing: 1rem;
+    font-family: 'VT323', monospace;
+    font-size: 1.5rem;
+    text-align: left;
+    animation: textShadow 1.6s infinite;
+}
+
+.image-cell {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #FFB000;
+    text-align: center;
+    vertical-align: middle;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.image-cell img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.text-cell {
+    padding: 1rem;
+    min-width: 300px;
+    border: 2px solid #FFB000;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Custom scrollbar for the table container */
+.table-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.table-container::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background: #FFB000;
+    border-radius: 4px;
 }
 
 /* CRT flicker effect */
